@@ -1,9 +1,98 @@
---- 
-redirect_from: diffdiffdepth/
+---
+redirect_from: lightfielddepth/
 ---
 
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Differentiable Diffusion for Dense Depth Estimation from Multi-view Images</title>
+  </head>
+
   <body>
-    Temp webpage for project.
+    <div class="title">
+      <h1>Differentiable Diffusion for Dense Depth Estimation from Multi-view Images</h1>
+      <h4>CVPR 2021</h4>
+
+      <div class="author-container">
+	<div class="author">
+	  <a href="https://cs.brown.edu/~nkhan6">Numair Khan</a></br>
+	  Brown University
+	</div>
+	
+	<div class="author">
+	  <a href="http://vclab.kaist.ac.kr/minhkim/">Min H. Kim</a></br>
+	  KAIST
+	</div>
+
+	<div class="author">
+	  <a href="http://www.jamestompkin.com">James Tompkin</a></br>
+	  Brown University
+	</div>
+      </div>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon">
+	<a href=""><img src="img/pdf-logo.png" onmouseover="this.src='img/pdf-logo-over.png'" onmouseout="this.src='img/pdf-logo.png'"/></a>
+      </div>
+      <div class="icon">
+	<a href=""><img src="img/pdf-logo.png" onmouseover="this.src='img/pdf-logo-over.png'" onmouseout="this.src='img/pdf-logo.png'"/></a>
+      </div>
+      <div class="icon">
+	<a href=""><img src="img/arXiv-logo.png" onmouseover="this.src='img/arXiv-logo-over.png'" onmouseout="this.src='img/arXiv-logo.png'"/></a>
+      </div>
+      <div class="icon">
+	<a href="https://github.com/brownvc/diffdiffdepth"><img src="img/github-logo.png" onmouseover="this.src='img/github-logo-over.png'" onmouseout="this.src='img/github-logo.png'"/></a>
+      </div>
+      <div class="icon">
+	<a href=""><img src="img/video-logo.png" onmouseover="this.src='img/video-logo-over.png'" onmouseout="this.src='img/video-logo.png'"/></a>
+      </div>
+    </div>
+    <span style="display:block;clear:both;height:2em"></span>
+
+    <div class="section">
+      <h3 style="font-family:aaargh">Abstract</h3>
+      We present a method to estimate dense depth by optimizing a sparse set of points such that their diffusion into a depth map minimizes a multi-view reprojection error from RGB supervision.
+      We optimize point positions, depths, and weights with respect to the loss by differential splatting that models points as Gaussians with analytic transmittance.
+      Further, we develop an efficient optimization routine that can simultaneously optimize the 50k+ points required for complex scene reconstruction.
+      We validate our routine using ground truth data and show high reconstruction quality.
+      Then, we apply this to light field and wider baseline images via self supervision, and show improvements in both average and outlier error for depth maps diffused from inaccurate sparse points.
+      Finally, we compare qualitative and quantitative results to image processing and deep learning methods.
+    </div>
+
+    <div class="citation">
+      <h3 style="font-family:aaargh">Citation</h3>
+      <div style="background-color:rgba(230, 230, 230, 1.0); padding:20px">
+	@inproceedings{khan2021diffdiffdepth, </br>
+	<div style="margin-left: 40px">
+	  title={Differentiable Diffusion for Dense Depth Estimation from Multi-view Images}, </br>
+	  author={Numair Khan and Min H. Kim and James Tompkin}, </br>
+	  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, </br>
+	  year={2021} </br>
+	</div>
+	}</br>
+      </div>
+    </div>
+
+    <div class="videocontainer">
+      <h3 style="font-family:aaargh">Presentation Video</h3>
+      <video src="" width="100%" controls></video>
+    </div>
+
+    <div class="videocontainer">
+      <h3 style="font-family:aaargh">Supplemental Video</h3>
+      <video src="" width="100%" controls></video>
+    </div>
+
+    </br>
+    </br>
+    </br>
+    
   </body>
+
 </html>
