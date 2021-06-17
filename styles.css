@@ -32,12 +32,14 @@ body {
 
 .icon-container {
     width:20%;
-    margin:auto;
+    min-width: 350px;
+    margin: auto;
 }
 
 .icon {
     width:20%;
     float:left;
+    margin: 20px 0px 20px 0px;
 }
 
 .icon img {
