@@ -20,14 +20,12 @@ body {
 }
 
 .author-container {
-    width:40%;
+    width:70%;
     margin:auto;
 }
 
 .author {
     font-size:medium;
-    width:33%;
-    float: left;
 }
 
 .icon-container {
@@ -37,9 +35,7 @@ body {
 }
 
 .icon {
-    width:20%;
-    float:left;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 10px 20px 10px;
 }
 
 .icon img {
